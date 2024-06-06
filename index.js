@@ -248,13 +248,9 @@ function createTable(data) {
       { title: 'BOROUGH_NAME' },
       { title: 'NEIGHBORHOOD' },
       { title: 'BUILDING_CLASS_CATEGORY' },
-      { title: 'LOT.' },
       { title: 'RESIDENTIAL_UNITS' },
       { title: 'COMMERCIAL_UNITS' },
-      { title: 'TOTAL_UNITS.' },
-      { title: 'GROSS_SQUARE_FEET' },
       { title: 'YEAR_BUILT' },
-      { title: 'SALE_PRICE' },
       { title: 'SALE_DATE' }
       ],
       data: dataSet
