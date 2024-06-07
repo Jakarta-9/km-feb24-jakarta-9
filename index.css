@@ -248,7 +248,6 @@ h1 {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   padding: 1rem;
-  position: absolute; /* Menambahkan posisi absolute */
 }
 
 /* Tambahkan aturan untuk menampilkan dropdown saat hover */
