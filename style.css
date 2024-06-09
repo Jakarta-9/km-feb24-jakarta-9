@@ -366,6 +366,114 @@ h1 {
   .dropyear+.dropdown-year {
     top: calc(60% + 1rem); /* Adjust the top value as needed */
   }
+    
+  * {
+    box-sizing: border-box;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 1rem;
+  }
+
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  @media only screen and (max-width: 320px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile tablet: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+  .chart {
+    padding: 1rem 1.5rem;
+    margin-bottom: .25rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: .5rem;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #F29696, #FAD6A5);
+    padding: 1.25rem;
+  }
+
+  .navbar-brand {
+    color: #F5F1DD;
+    font-size: 1.75rem;
+    text-decoration: none;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+    margin-right: auto;
+  }
+
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    margin-left: 1.25rem;
+  }
+
+  .nav-link {
+    color: white;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link i {
+    margin-right: 0.5rem;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    border: 5px solid #F7B39C;
+    border-radius: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto 20px auto;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+    
 }
 
 @media (max-width: 768px) {
@@ -378,6 +486,113 @@ h1 {
   .dropdate+.dropdown-date,
   .dropyear+.dropdown-year {
     top: calc(60% + 1rem); /* Adjust the top value as needed */
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 1rem;
+  }
+
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  @media only screen and (max-width: 320px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile tablet: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+  .chart {
+    padding: 1rem 1.5rem;
+    margin-bottom: .25rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: .5rem;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #F29696, #FAD6A5);
+    padding: 1.25rem;
+  }
+
+  .navbar-brand {
+    color: #F5F1DD;
+    font-size: 1.75rem;
+    text-decoration: none;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+    margin-right: auto;
+  }
+
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    margin-left: 1.25rem;
+  }
+
+  .nav-link {
+    color: white;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link i {
+    margin-right: 0.5rem;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    border: 5px solid #F7B39C;
+    border-radius: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto 20px auto;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
   }
 }
 
