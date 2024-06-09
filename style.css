@@ -47,12 +47,12 @@ header {
     width: 100%;
   }
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 
   .navbar-nav {
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
   }
 
@@ -67,7 +67,7 @@ header {
   }
 
   .row {
-    flex-direction: column;
+    flex-direction: row;
     padding: 1rem;
   }
 
@@ -99,7 +99,7 @@ header {
   }
 
   .summary-container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
   }
 
