@@ -125,7 +125,7 @@ body {
 }
 
 .loading-line-container {
-  display: block;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   box-sizing: content-box;
