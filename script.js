@@ -84,7 +84,7 @@ function populateDateDropdown() {
     const month = currentDate.toLocaleString("default", { month: "short" });
     const year = currentDate.getFullYear();
     months.push(`${month} ${year}`);
-    currentDate.setMonth(currentDate.getMonth() + 1);
+    currentDate.setMonth(currentDate.getMonth() + 1); // Perbarui nilai currentDate di setiap iterasi
   }
 
   months.forEach((monthYear) => {
@@ -106,7 +106,6 @@ function populateDateDropdown() {
     event.stopPropagation();
   });
 }
-
 // Fungsi untuk mengisi dropdown tahun
 function populateYearDropdown() {
   const years = new Set();
