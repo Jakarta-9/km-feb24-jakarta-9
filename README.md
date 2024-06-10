@@ -60,3 +60,7 @@ https://drive.google.com/file/d/1sH0ce9ezOEyjM5DC_Cw1cmoY5rfQFDNM/view?usp=shari
 ![image](https://github.com/Jakarta-9/km-feb24-jakarta-9/assets/168116790/154f509d-89b2-4cec-bb45-bcc3a3c59960)
 ![image](https://github.com/Jakarta-9/km-feb24-jakarta-9/assets/168116790/29df429d-c5db-4bd4-9b98-887a7675a091)
 ![image](https://github.com/Jakarta-9/km-feb24-jakarta-9/assets/168116790/26af4ffb-e360-4026-818f-d467c5a44b18)
+
+## QUALITY CODE
+![Quality code](https://github.com/Jakarta-9/km-feb24-jakarta-9/assets/168116790/d0db61b3-40c3-4cd8-955d-be1b8290b55d)
+
