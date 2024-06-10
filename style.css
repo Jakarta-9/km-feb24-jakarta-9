@@ -128,7 +128,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  box-sizing: border-box;
+  box-sizing: content-box;
   transition: box-shadow .5s;
   padding: 2px;
   position: relative;
