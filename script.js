@@ -76,32 +76,30 @@ function populateDateDropdown() {
   const endDate = new Date("2017-08-31");
 
   const dropdownDate = document.getElementById("dropdown-date");
-  dropdownDate.innerHTML = ""; // Kosongkan konten sebelumnya
+  dropdownDate.innerHTML = ""; // Clear previous content
 
   const months = [];
-  let currentDate = new Date(startDate);
-  while (currentDate <= endDate) {
+  for (let currentDate = new Date(startDate); currentDate <= endDate; currentDate.setMonth(currentDate.getMonth() + 1)) {
     const month = currentDate.toLocaleString("default", { month: "short" });
     const year = currentDate.getFullYear();
     months.push(`${month} ${year}`);
-    currentDate.setMonth(currentDate.getMonth() + 1); // Perbarui nilai currentDate di setiap iterasi
   }
 
   months.forEach((monthYear) => {
     const label = document.createElement("label");
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    checkbox.name = "date"; // Tambahkan name untuk checkbox
-    checkbox.value = monthYear; // Tambahkan value untuk checkbox
+    checkbox.name = "date";
+    checkbox.value = monthYear;
     checkbox.id = `date-${monthYear}`;
-    checkbox.checked = true; // Setel checkbox aktif secara default
+    checkbox.checked = true;
     label.htmlFor = `date-${monthYear}`;
     label.appendChild(checkbox);
     label.appendChild(document.createTextNode(monthYear));
     dropdownDate.appendChild(label);
   });
 
-  // Tambahkan event listener untuk mencegah menutup dropdown saat mengklik di dalamnya
+  // Add event listener to prevent dropdown from closing when clicked inside
   dropdownDate.addEventListener("click", function (event) {
     event.stopPropagation();
   });
