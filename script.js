@@ -79,10 +79,14 @@ function populateDateDropdown() {
   dropdownDate.innerHTML = ""; // Clear previous content
 
   const months = [];
-  for (let currentDate = new Date(startDate); currentDate <= endDate; currentDate.setMonth(currentDate.getMonth() + 1)) {
+  let currentDate = new Date(startDate);
+
+  // Terminate the loop when currentDate exceeds endDate
+  while (currentDate.getTime() <= endDate.getTime()) {
     const month = currentDate.toLocaleString("default", { month: "short" });
     const year = currentDate.getFullYear();
     months.push(`${month} ${year}`);
+    currentDate.setMonth(currentDate.getMonth() + 1); // Update currentDate value for next iteration
   }
 
   months.forEach((monthYear) => {
@@ -104,6 +108,7 @@ function populateDateDropdown() {
     event.stopPropagation();
   });
 }
+
 // Fungsi untuk mengisi dropdown tahun
 function populateYearDropdown() {
   const years = new Set();
