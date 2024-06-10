@@ -35,7 +35,7 @@ window.onload = async function () {
 };
 
 // Fungsi untuk mengisi dropdown borough
-function populateBoroughDropdown(data) {
+function populateBoroughDropdown() {
   const boroughOrder = [
     "Manhattan",
     "Brooklyn",
@@ -44,7 +44,7 @@ function populateBoroughDropdown(data) {
     "Staten Island",
   ];
   const uniqueBoroughs = Array.from(
-    new Set(data.map((item) => item.BOROUGH_NAME))
+    new Set(cachedData.map((item) => item.BOROUGH_NAME))
   ).sort((a, b) => boroughOrder.indexOf(a) - boroughOrder.indexOf(b));
 
   const dropdownBorough = document.getElementById("dropdown-borough");
@@ -108,10 +108,10 @@ function populateDateDropdown() {
 }
 
 // Fungsi untuk mengisi dropdown tahun
-function populateYearDropdown(data) {
+function populateYearDropdown() {
   const years = new Set();
 
-  data.forEach((item) => {
+  cachedData.forEach((item) => {
     const date = new Date(item.SALE_DATE);
     const year = date.getFullYear();
     if (!isNaN(year)) {
@@ -142,7 +142,6 @@ function populateYearDropdown(data) {
     event.stopPropagation();
   });
 }
-
 // Fungsi untuk memfilter data berdasarkan checkbox borough, date, dan year
 function filterData() {
   // Ambil nilai yang dipilih dari checkbox borough
