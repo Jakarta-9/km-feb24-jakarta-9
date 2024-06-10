@@ -20,9 +20,9 @@ window.onload = async function () {
   move();
   cachedData = await fetchData();
 
-  populateBoroughDropdown(cachedData); // Isi dropdown borough
-  populateDateDropdown(cachedData); // Isi dropdown bulan, tahun pada date
-  populateYearDropdown(cachedData); // Isi dropdown tahun
+  populateBoroughDropdown(); // Isi dropdown borough
+  populateDateDropdown(); // Isi dropdown bulan, tahun pada date
+  populateYearDropdown(); // Isi dropdown tahun
   
   filterData(); // Panggil filterData di sini agar filteredData diinisialisasi
 
